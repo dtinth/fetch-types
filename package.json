@@ -1,6 +1,6 @@
 {
   "name": "fetch-types",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "files": [
     "src",
     "lib",
@@ -9,8 +9,7 @@
   ],
   "main": "./lib-commonjs/index.js",
   "module": "./lib/index.js",
-  "types": "./dist/fetch-types.d.ts",
-  "docModel": "./dist/fetch-types.api.json",
+  "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dtinth/fetch-types.git"
@@ -29,7 +28,7 @@
   "scripts": {
     "build": "heft build",
     "test": "heft test",
-    "prepare": "heft build && ./scripts/generate-api-docs",
+    "prepare": "heft build",
     "release": "./scripts/release",
     "format": "prettier --write .",
     "api": "./scripts/generate-api-docs"
